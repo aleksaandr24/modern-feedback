@@ -21,3 +21,12 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.header {
+    height: 96px;
+}
+
+.contact_us {
+    height: 266px;
+    background: linear-gradient(270deg, #E3EEFA 12.32%, rgba(227, 238, 250, 0) 20.76%), linear-gradient(90deg, #E3EEFA 17.33%, rgba(227, 238, 250, 0) 52.16%), url();
+}

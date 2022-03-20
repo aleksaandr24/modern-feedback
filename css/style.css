@@ -1,24 +1,9 @@
-@font-face {
-    font-family: "SegoeUIBlack";
-    src: url("../fonts/seguibl.ttf");
-}
-
-@font-face {
-    font-family: "Roboto-Regular";
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Roboto-Light";
-    src: url("../fonts/Roboto-Light.ttf");
-}
-
-@font-face {
-    font-family: "Roboto-Bold";
-    src: url("../fonts/Roboto-Bold.ttf");
-}
+@import url('normalize.css');
+@import url('grid.css');
 
 html, body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,7 +11,37 @@ html, body {
     height: 96px;
 }
 
-.contact_us {
+.header__menu-list {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__menu-list > li::after {
+    content: ' ' url('../img/chevron-down.svg');
+}
+
+.header__menu-list a, .header__menu-list a:visited {
+    text-decoration: none;
+}
+
+.contact-us {
     height: 266px;
     background: linear-gradient(270deg, #E3EEFA 12.32%, rgba(227, 238, 250, 0) 20.76%), linear-gradient(90deg, #E3EEFA 17.33%, rgba(227, 238, 250, 0) 52.16%), url();
+}
+
+.mailing-address {
+    height: 160px;
+    background-color: #CFEFFF;
+}
+
+.footer {
+    height: 564px;
+    background-color: #45332DEB;
+    background-image: url('../img/footer-background.png');
 }

@@ -266,3 +266,44 @@ html, body {
     background-color: #45332DEB;
     background-image: url('../img/footer-background.png');
 }
+
+.footer__logo p, .footer__text p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer__menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__menu-list a, .footer__menu-list a:visited {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__menu-list a:hover {
+    text-decoration: underline;
+}
+
+.footer__social {
+    text-align: right;
+}
+
+.footer__social h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__social img {
+    margin-left: 15px;
+}

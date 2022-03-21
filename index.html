@@ -80,23 +80,25 @@
                             <form action="feedback.php" class="form-feedback" name="form" method="post">
                                 <div class="row">
                                     <div class="col-3">
-                                        <p>subject</p>
+                                        <p>Subject<span class="text-red">*</span>:</p>
                                     </div>
                                     <div class="col-9">
-                                        <select name="theme" id="theme" aria-placeholder="">
-                                            <option value="" disabled selected hidden>Select Subject</option>
-                                            <option value="1">Choosing Credit Card</option>
-                                            <option value="2">Credit Card Application Problems</option>
-                                            <option value="3">Earning and Redeeming Rewards</option>
-                                            <option value="4">Building Credit with Credit Card</option>
-                                            <option value="5">Balance Transfer Issues</option>
-                                            <option value="6">Other</option>
-                                        </select>
+                                        <div class="form-select">
+                                            <select name="theme" id="theme" aria-placeholder="">
+                                                <option value="" disabled selected hidden>Select Subject</option>
+                                                <option value="1">Choosing Credit Card</option>
+                                                <option value="2">Credit Card Application Problems</option>
+                                                <option value="3">Earning and Redeeming Rewards</option>
+                                                <option value="4">Building Credit with Credit Card</option>
+                                                <option value="5">Balance Transfer Issues</option>
+                                                <option value="6">Other</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <p>e-mail</p>
+                                        <p>E-mail<span class="text-red">*</span>:</p>
                                     </div>
                                     <div class="col-9">
                                         <input type="text" name="e-mail">
@@ -104,7 +106,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <p>name</p>
+                                        <p>Name<span class="text-red">*</span>:</p>
                                     </div>
                                     <div class="col-9">
                                         <input type="text" name="name">
@@ -112,7 +114,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <p>phone number</p>
+                                        <p>Phone number:</p>
                                     </div>
                                     <div class="col-9">
                                         <input type="text" name="phone">
@@ -120,18 +122,21 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-3">
-                                        <p>question</p>
+                                        <p>Question<span class="text-red">*</span>:</p>
                                     </div>
                                     <div class="col-9">
                                         <textarea name="question" id="question" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6">
-                                        required fields
+                                    <div class="col-3">
+                                        
                                     </div>
-                                    <div class="col-6">
-                                        <button type="submit">send</button>
+                                    <div class="col-9">
+                                        <div class="form-feedback__submit">
+                                            <p><span class="text-red">* required fields</span></p>
+                                            <button type="submit">send</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>

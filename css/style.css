@@ -191,6 +191,28 @@ html, body {
 .mailing-address {
     height: 160px;
     background-color: #CFEFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailing-address__icon {
+    padding-right: 30px;
+}
+
+.mailing-address__text h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #009EE8;
+    text-transform: uppercase;
+}
+
+.mailing-address__text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #4D4D4D;
 }
 
 .footer {

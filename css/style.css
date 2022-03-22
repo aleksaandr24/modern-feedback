@@ -324,20 +324,33 @@ html, body {
     background-image: url('../img/footer-background.png');
 }
 
+.footer__logo {
+    padding: 10px 0 0 40px;
+}
+
+.footer__logo div {
+    margin-top: 20px;
+}
+
 .footer__logo p, .footer__text p {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
 }
 
+.footer__menu {
+    padding: 27px 40px 0 0;
+}
+
 .footer__menu-list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
 }
 
 .footer__menu-list a, .footer__menu-list a:visited {
+    margin-left: 17px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -350,6 +363,7 @@ html, body {
 }
 
 .footer__social {
+    padding: 5px 40px 0 0;
     text-align: right;
 }
 
@@ -363,4 +377,8 @@ html, body {
 
 .footer__social img {
     margin-left: 15px;
+}
+
+.footer__text {
+    padding: 10px 40px;
 }

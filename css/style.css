@@ -11,11 +11,29 @@ html, body {
     height: 96px;
 }
 
+.header__logo {
+    padding-top: 24px;
+    padding-left: 40px;
+}
+
+.header__container {
+    padding-right: 35px;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.header__menu {
+    padding-right: 22px;
+}
+
 .header__menu-list {
     list-style-type: none;
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
+    letter-spacing: 0.9px;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -40,7 +58,7 @@ html, body {
 }
 
 .input-search {
-    width: 200px;
+    width: 234px;
     height: 32px;
     border: 1px solid #B3B3B3;
     padding: 5px;
@@ -70,6 +88,7 @@ html, body {
     align-items: center;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 0.8px;
 }
 
 .contact-us__menu-list li::after {
@@ -88,10 +107,13 @@ html, body {
 }
 
 .contact-us__title {
+    width: 216px;
     height: 100%;
+    padding-top: 69px;
+    padding-left: 40px;
     background-image: url('../img/contact-us-line.svg');
     background-repeat: no-repeat;
-    background-position: 80%;
+    background-position: right;
 }
 
 .contact-us__title h1 {
@@ -102,6 +124,10 @@ html, body {
     color: #4D4D4D;
 }
 
+.contact-us__text {
+    padding: 31px 18px 0 41px;
+}
+
 .contact-us__text p {
     font-size: 18px;
     line-height: 21px;
@@ -110,6 +136,12 @@ html, body {
 
 .write-us {
     height: 626px;
+}
+
+.write-us__title {
+    height: 107px;
+    padding-top: 41px;
+    padding-left: 39px;
 }
 
 .write-us__title h2 {
@@ -239,9 +271,18 @@ html, body {
 }
 
 .banks__item {
+    width: 305px;
+    height: 110px;
     flex-basis: 25%;
     display: flex;
     flex-direction: row;
+}
+
+.banks__item-logo {
+    width: 130px;
+    background-image: url('../img/banks-line.svg');
+    background-position: 95% center;
+    background-repeat: no-repeat;
 }
 
 .banks__item img {

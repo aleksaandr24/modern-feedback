@@ -1,5 +1,15 @@
 "use strict";
 
+const phoneInput = document.querySelector('.phone-input');
+const phonePlaceholder = document.querySelector('.phone-placeholder');
+
+phoneInput.addEventListener('input', (e) => {
+    let inputMask = 'XXX-XXX-XXXX';
+    let inputText = e.target.value;
+    let inputTextNew = inputText + inputMask.substring(inputText.length, 12);
+    phonePlaceholder.innerHTML = inputTextNew;
+});
+
 function sendForm() {
     
     let requiredFields = ['theme', 'e-mail', 'name', 'question'];

@@ -10,11 +10,12 @@ phoneInput.addEventListener('input', (e) => {
     phonePlaceholder.innerHTML = inputTextNew;
 });
 
-function sendForm() {
+function validateForm() {
     
     let requiredFields = ['theme', 'e-mail', 'name', 'question'];
     let form = document.forms[1];
-    let i, j, flag;
+    let i, j
+    let flag = true;
 
     for (j = 0; j < requiredFields.length; j++) {
         for (i = 0; i < form.length; i++) {
@@ -33,5 +34,32 @@ function sendForm() {
         }
     }
 
-    return flag;
+    if (flag === true) {
+        sendAjaxForm('form-feedback', 'action_form.php');
+    } 
+        
+    return false;
+}
+
+function sendAjaxForm(form, url) {
+    $.ajax({
+        url: url,
+        type: 'POST',
+        dataType: 'html',
+        data: $('#'+form).serialize(),
+        success: function() {
+            let popup_id = $('.popup-container');
+            $(popup_id).show(0).delay(3000).hide(0);
+            $('body').click(function() {
+                $(popup_id).hide();
+            });
+            $('.popup-close').click(function() {
+                $(popup_id).hide();
+            });
+            console.log('Form sended');
+        },
+        error: function() {
+            console.log('Form sending error');
+        }
+    });
 }

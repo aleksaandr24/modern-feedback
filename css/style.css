@@ -7,6 +7,10 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.h-100 {
+    height: 100%;
+}
+
 .header {
     height: 96px;
 }
@@ -14,6 +18,14 @@ html, body {
 .header__logo {
     padding-top: 24px;
     padding-left: 40px;
+}
+
+.header__logo-img_desktop {
+    display: block;
+}
+
+.header__logo-img_tablet {
+    display: none;
 }
 
 .header__container {
@@ -441,4 +453,80 @@ html, body {
 
 .popup-close {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header {
+        height: 90px;
+    }
+
+    .header__logo {
+        padding: 10px 0 0 20px;
+    }
+
+    .header__logo-img_desktop {
+        display: none;
+    }
+
+    .header__logo-img_tablet {
+        display: block;
+    }
+
+    .header__container {
+        padding: 0 20px 0 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .header__menu {
+        padding: 0;
+    }
+
+    .header__menu-list {
+        padding: 0;
+        font-size: 14px;
+        line-height: 0;
+        justify-content: space-between;
+    }
+
+    .header__search {
+        display: flex;
+        justify-content: start;
+    }
+
+    .input-search {
+        width: 337px;
+    }
+
+    .contact-us {
+        height: 155px;
+        width: 100%;
+        background-image: url('../img/contact-us-background-tablet.png');
+    }
+
+    .contact-us__menu-row {
+        display: none;
+    }
+
+    .contact-us__title {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us__title h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .contact-us__text {
+        padding: 0;
+    }
+
+    .contact-us__text p {
+        font-size: 16px;
+    }
 }

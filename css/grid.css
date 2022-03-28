@@ -14,7 +14,7 @@
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
     height: 100%;
 }
 
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 576px) {
     .container {
-        width: 540px;
+        
     }
     .col-sm-12 {
         width: 100%;
@@ -103,9 +103,9 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .container {
-        width: 720px;
+        
     }
     .col-md-12 {
         width: 100%;
@@ -150,7 +150,7 @@
 
 @media screen and (min-width: 992px) {
     .container {
-        width: 960px;
+        
     }
     .col-lg-12 {
         width: 100%;
@@ -195,7 +195,7 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1140px;
+        
     }
     .col-xl-12 {
         width: 100%;

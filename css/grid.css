@@ -58,7 +58,7 @@
     display: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 321px) {
     .container {
         
     }

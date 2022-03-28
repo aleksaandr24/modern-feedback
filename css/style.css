@@ -559,4 +559,57 @@ html, body {
     .write-us__text p {
         font-size: 16px;
     }
+
+    .banks {
+        height: 705px;
+    }
+
+    .banks__title {
+        padding: 20px;
+    }
+
+    .banks__title h2 {
+        font-size: 22px;
+    }
+
+    .banks__container {
+        height: 100%;
+        padding: 0 0 0 40px;
+    }
+
+    .banks__item {
+        width: 100%;
+        margin: 20px 0 20px 0;
+        flex-basis: 50%;
+    }
+
+    .footer {
+        height: 672px;
+        background-color: #45332DEB;
+        background-image: url('../img/footer-background-tablet.png');
+    }
+
+    .footer__logo {
+        padding-left: 20px;
+    }
+
+    .footer__menu, .footer__social {
+        padding-right: 40px;
+    }
+
+    .footer__menu-list {
+        flex-wrap: wrap;
+    }
+
+    .footer__menu-list li {
+        margin: 0 20px 10px 0;
+    }
+
+    .footer__social h5 {
+        margin: 0;
+    }
+
+    .footer__text {
+        padding: 10px 20px;
+    }
 }

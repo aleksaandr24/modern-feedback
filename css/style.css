@@ -529,4 +529,34 @@ html, body {
     .contact-us__text p {
         font-size: 16px;
     }
+
+    .write-us-row {
+        flex-direction: column;
+    }
+
+    .write-us {
+        height: 765px;
+    }
+
+    .write-us__title {
+        height: 50px;
+        padding: 20px 0 0 20px;
+    }
+
+    .write-us__title h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .write-us__form {
+        padding: 0 0 0 20px;
+    }
+
+    .write-us__text {
+        padding: 0 20px 0 20px;
+    }
+
+    .write-us__text p {
+        font-size: 16px;
+    }
 }

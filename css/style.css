@@ -531,6 +531,48 @@ html, body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .header__logo-img_desktop {
+        display: none;
+    }
+    
+    .header__logo-img_tablet {
+        display: block;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .header__menu {
+        text-align: left;
+    }
+
+    .header__search {
+        text-align: right;
+    }
+
+    .header__menu-list {
+        margin: 0;
+    }
+
+    .contact-us {
+        background-position: 50%;
+    }
+
+    .form-feedback__submit {
+        padding-left: 160px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .contact-us {
+        background-position: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     
     .header {
@@ -550,7 +592,7 @@ html, body {
     }
 
     .header__container {
-        padding: 0 20px 0 0;
+        padding: 20px 20px 0 0;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
@@ -692,7 +734,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px)  {
 
     .header {
         height: 60px;
@@ -739,10 +781,15 @@ html, body {
 
     .contact-us {
         height: 204px;
+        background-image: url('../img/contact-us-background-mobile.png');
+        background-repeat: no-repeat;
     }
 
     .contact-us__row {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 20px;
     }
 
     .contact-us__title, .contact-us__text {
@@ -762,8 +809,14 @@ html, body {
         font-size: 20px;
     }
 
+    .contact-us__text {
+        padding: 0;
+    }
+
     .contact-us__text p {
         font-size: 14px;
+        line-height: normal;
+        margin: 0;
     }
 
     .write-us {

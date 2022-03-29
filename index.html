@@ -81,86 +81,82 @@
                     </div>
                 </div>
                 <div class="row write-us-row">
-                    <div class="col-12 col-md-6">
-                        <div class="write-us__form">
-                            <form action="" class="form-feedback" name="form" method="post" onsubmit="return validateForm()">
-                                <div class="row write-us__form-row">
-                                    <div class="col-12 col-sm-3">
-                                        <p>Subject<span class="text-red">*</span>:</p>
-                                    </div>
-                                    <div class="col-12 col-sm-9">
-                                        <div class="form-select">
-                                            <select name="theme" id="theme" aria-placeholder="">
-                                                <option value="" disabled selected hidden>Select Subject</option>
-                                                <option value="1">Choosing Credit Card</option>
-                                                <option value="2">Credit Card Application Problems</option>
-                                                <option value="3">Earning and Redeeming Rewards</option>
-                                                <option value="4">Building Credit with Credit Card</option>
-                                                <option value="5">Balance Transfer Issues</option>
-                                                <option value="6">Other</option>
-                                            </select>
-                                        </div>
+                    <div class="write-us__form">
+                        <form action="" class="form-feedback" name="form" method="post" onsubmit="return validateForm()">
+                            <div class="row write-us__form-row">
+                                <div class="col-12 col-sm-3">
+                                    <p>Subject<span class="text-red">*</span>:</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <div class="form-select">
+                                        <select name="theme" id="theme" aria-placeholder="">
+                                            <option value="" disabled selected hidden>Select Subject</option>
+                                            <option value="1">Choosing Credit Card</option>
+                                            <option value="2">Credit Card Application Problems</option>
+                                            <option value="3">Earning and Redeeming Rewards</option>
+                                            <option value="4">Building Credit with Credit Card</option>
+                                            <option value="5">Balance Transfer Issues</option>
+                                            <option value="6">Other</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="row write-us__form-row">
-                                    <div class="col-12 col-sm-3">
-                                        <p>E-mail<span class="text-red">*</span>:</p>
-                                    </div>
-                                    <div class="col-12 col-sm-9">
-                                        <input type="text" name="e-mail">
+                            </div>
+                            <div class="row write-us__form-row">
+                                <div class="col-12 col-sm-3">
+                                    <p>E-mail<span class="text-red">*</span>:</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <input type="text" name="e-mail">
+                                </div>
+                            </div>
+                            <div class="row write-us__form-row">
+                                <div class="col-12 col-sm-3">
+                                    <p>Name<span class="text-red">*</span>:</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <input type="text" name="name">
+                                </div>
+                            </div>
+                            <div class="row write-us__form-row">
+                                <div class="col-12 col-sm-3">
+                                    <p>Phone number:</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <div class="phone-container">
+                                        <input type="text" name="phone" class="phone-input">
+                                        <div class="phone-placeholder"></div>
                                     </div>
                                 </div>
-                                <div class="row write-us__form-row">
-                                    <div class="col-12 col-sm-3">
-                                        <p>Name<span class="text-red">*</span>:</p>
-                                    </div>
-                                    <div class="col-12 col-sm-9">
-                                        <input type="text" name="name">
+                            </div>
+                            <div class="row write-us__form-row">
+                                <div class="col-12 col-sm-3">
+                                    <p>Question<span class="text-red">*</span>:</p>
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <textarea name="question" id="question" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-feedback__submit">
+                                        <div><p><span class="text-red">* required fields</span></p></div>
+                                        <div><button type="submit">send</button></div>
                                     </div>
                                 </div>
-                                <div class="row write-us__form-row">
-                                    <div class="col-12 col-sm-3">
-                                        <p>Phone number:</p>
-                                    </div>
-                                    <div class="col-12 col-sm-9">
-                                        <div class="phone-container">
-                                            <input type="text" name="phone" class="phone-input">
-                                            <div class="phone-placeholder"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row write-us__form-row">
-                                    <div class="col-12 col-sm-3">
-                                        <p>Question<span class="text-red">*</span>:</p>
-                                    </div>
-                                    <div class="col-12 col-sm-9">
-                                        <textarea name="question" id="question" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-feedback__submit">
-                                            <div><p><span class="text-red">* required fields</span></p></div>
-                                            <div><button type="submit">send</button></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="write-us__text">
-                            <p>All information submitted on this form will remain completely confidential. We <b>DO NOT sell</b> names or email addresses to third parties.</p>
-                            <p>Please review our privacy policy for further information.</p>
-                            <p>Please note:<br>We <b>DO NOT issue credit cards</b> or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card directly.</p>
-                            <div class="popup-container">
-                                <div class="popup-wrap">
-                                    <div class="popup">
-                                        <h6>Thanks for your question!</h6>
-                                        <p>Our experts will reply you by email as soon as possible.</p>
-                                    </div>
-                                    <div class="popup-close"><img src="img/popup-close.svg" alt="X"></div>
+                    <div class="write-us__text">
+                        <p>All information submitted on this form will remain completely confidential. We <b>DO NOT sell</b> names or email addresses to third parties.</p>
+                        <p>Please review our privacy policy for further information.</p>
+                        <p>Please note:<br>We <b>DO NOT issue credit cards</b> or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card directly.</p>
+                        <div class="popup-container">
+                            <div class="popup-wrap">
+                                <div class="popup">
+                                    <h6>Thanks for your question!</h6>
+                                    <p>Our experts will reply you by email as soon as possible.</p>
                                 </div>
+                                <div class="popup-close"><img src="img/popup-close.svg" alt="X"></div>
                             </div>
                         </div>
                     </div>

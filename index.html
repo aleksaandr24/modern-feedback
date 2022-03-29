@@ -84,11 +84,11 @@
                     <div class="col-12 col-md-6">
                         <div class="write-us__form">
                             <form action="" class="form-feedback" name="form" method="post" onsubmit="return validateForm()">
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row write-us__form-row">
+                                    <div class="col-12 col-sm-3">
                                         <p>Subject<span class="text-red">*</span>:</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-sm-9">
                                         <div class="form-select">
                                             <select name="theme" id="theme" aria-placeholder="">
                                                 <option value="" disabled selected hidden>Select Subject</option>
@@ -102,49 +102,46 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row write-us__form-row">
+                                    <div class="col-12 col-sm-3">
                                         <p>E-mail<span class="text-red">*</span>:</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-sm-9">
                                         <input type="text" name="e-mail">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row write-us__form-row">
+                                    <div class="col-12 col-sm-3">
                                         <p>Name<span class="text-red">*</span>:</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-sm-9">
                                         <input type="text" name="name">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row write-us__form-row">
+                                    <div class="col-12 col-sm-3">
                                         <p>Phone number:</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-sm-9">
                                         <div class="phone-container">
                                             <input type="text" name="phone" class="phone-input">
                                             <div class="phone-placeholder"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row write-us__form-row">
+                                    <div class="col-12 col-sm-3">
                                         <p>Question<span class="text-red">*</span>:</p>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-sm-9">
                                         <textarea name="question" id="question" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-3">
-                                        
-                                    </div>
-                                    <div class="col-9">
+                                    <div class="col-12">
                                         <div class="form-feedback__submit">
-                                            <p><span class="text-red">* required fields</span></p>
-                                            <button type="submit">send</button>
+                                            <div><p><span class="text-red">* required fields</span></p></div>
+                                            <div><button type="submit">send</button></div>
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +168,10 @@
             </div>
         </section>
         <section class="mailing-address">
-            <div class="mailing-address__icon"><img src="img/mailing.svg" alt="mailing"></div>
+            <div class="mailing-address__icon">
+                <img class="mailing-address__icon-img" src="img/mailing.svg" alt="mailing">
+                <img class="mailing-address__icon-img_mobile" src="img/mailing-mobile.svg" alt="mailing">
+            </div>
             <div class="mailing-address__text">
                 <h3>Mailing address:</h3>
                 <p>1680 South Ashland Ave Suit# 3007<br>Chicago, IL 60608-2013</p>

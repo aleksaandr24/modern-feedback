@@ -9,8 +9,13 @@
 }
 
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .container {
@@ -58,9 +63,6 @@
 }
 
 @media screen and (min-width: 321px) {
-    .container {
-        
-    }
     .col-sm-12 {
         width: 100%;
     }
@@ -103,9 +105,6 @@
 }
 
 @media screen and (min-width: 769px) {
-    .container {
-        
-    }
     .col-md-12 {
         width: 100%;
     }
@@ -148,9 +147,6 @@
 }
 
 @media screen and (min-width: 992px) {
-    .container {
-        
-    }
     .col-lg-12 {
         width: 100%;
     }
@@ -193,9 +189,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        
-    }
     .col-xl-12 {
         width: 100%;
     }

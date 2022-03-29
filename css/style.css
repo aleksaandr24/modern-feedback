@@ -371,7 +371,9 @@ html, body {
 .footer {
     height: 564px;
     background-color: #45332DEB;
-    background-image: url('../img/footer-background.png');
+    background-image: url('../img/footer-line.png'), url('../img/footer-background.png');
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 30%, 0 0;
 }
 
 .footer__logo {
@@ -380,6 +382,18 @@ html, body {
 
 .footer__logo div {
     margin-top: 20px;
+}
+
+.footer__logo-img {
+    display: block;
+}
+
+.footer__logo-img_mobile {
+    display: none;
+}
+
+.footer__logo-copyright_mobile {
+    display: none;
 }
 
 .footer__logo p, .footer__text p {
@@ -414,7 +428,10 @@ html, body {
 
 .footer__social {
     padding: 5px 40px 0 0;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 
 .footer__social h5 {
@@ -605,7 +622,9 @@ html, body {
     .footer {
         height: 672px;
         background-color: #45332DEB;
-        background-image: url('../img/footer-background-tablet.png');
+        background-image: url('../img/footer-line.png'), url('../img/footer-background.png');
+        background-repeat: repeat-x, no-repeat;
+        background-position: 0 24%, 0 0;
     }
 
     .footer__logo {
@@ -819,5 +838,57 @@ html, body {
 
     .footer {
         height: 1167px;
+        background-color: #45332DEB;
+        background-image: url('../img/footer-line.png'), url('../img/footer-line.png'), url('../img/footer-background.png');
+        background-repeat: repeat-x, repeat-x, no-repeat;
+        background-position: 0 6%, 0 25%, 0 0;
+    }
+
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer__logo-img {
+        display: none;
+    }
+
+    .footer__logo-img_mobile {
+        display: block;
+    }
+
+    .footer__logo-copyright {
+        display: none;
+    }
+
+    .footer__logo-copyright_mobile {
+        display: block;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .footer__menu {
+        padding: 20px 0 0 0;
+    }
+
+    .footer__menu-list {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .footer__social {
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__social h5 {
+        margin-bottom: 20px;
+    }
+
+    .footer__text p, .footer__logo-copyright_mobile p {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
